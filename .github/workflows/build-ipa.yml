@@ -6,10 +6,15 @@ on:
   workflow_dispatch:
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+        run: echo "GitHub Actions is working!"
+
   build:
     name: Build IPA
-    runs-on: macos-14
-
+    runs-on: macos-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
