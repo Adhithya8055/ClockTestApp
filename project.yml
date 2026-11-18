@@ -1,0 +1,16 @@
+name: ClockTest
+options:
+  bundleIdPrefix: com.adhithya
+targets:
+  ClockTest:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: Sources
+    info:
+      path: Sources/Info.plist
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.adhithya.clocktest
+      CODE_SIGNING_ALLOWED: NO
+      CODE_SIGN_IDENTITY: ""
